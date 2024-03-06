@@ -16,3 +16,7 @@
 .marquee-open {
   margin-top: 400px; /* Adjust this value based on your requirements */
 }
+button:hover .text-violet-800,
+button:hover span {
+  color: white;
+}

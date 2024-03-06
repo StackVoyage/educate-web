@@ -82,7 +82,7 @@ const Navbar = () => {
           navOpen && isMobile ? "marquee-open" : ""
         }`}
       >
-        <Marquee2 />
+        {/* <Marquee2 /> */}
       </div>
     </>
   );
