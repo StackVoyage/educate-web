@@ -23,6 +23,7 @@ export const NavLinkItemMobile = ({ to, children, onClick }) => (
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isNavbarFixed, setIsNavbarFixed] = useState(false);
 
   const toggleNav = () => {
     setNavOpen(!navOpen);
@@ -40,9 +41,29 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsNavbarFixed(true);
+      } else {
+        setIsNavbarFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <div className=" bg-gradient-to-r from-white to-violet-400 w-full h-20 flex justify-between items-center relative">
+      <div
+        className={`navbar bg-gradient-to-r from-white to-violet-400 w-full h-20 flex justify-between items-center relative ${
+          isNavbarFixed ? "fixed-navbar" : ""
+        }`}
+      >
         <div className="">
           <Link to="/" className="flex ml-4">
             <h1 className="text-violet-500 font-bold text-5xl">Edumate</h1>

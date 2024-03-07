@@ -16,7 +16,19 @@
 .marquee-open {
   margin-top: 400px; /* Adjust this value based on your requirements */
 }
+
+/*couse button*/
 button:hover .text-violet-800,
 button:hover span {
   color: white;
+}
+/*navbar*/
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  opacity: 0.9;
 }
