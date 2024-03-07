@@ -7,7 +7,7 @@ import About from "./About";
 import DemoLectures from "./DemoLectures";
 import Testimonials from "./Testimonials";
 import Footer from "./Footer";
-import SignIn from "./auth/SignIn";
+
 import Advertising from "./Advertising";
 
 const CourseButton = ({ text }) => (
