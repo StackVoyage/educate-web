@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-r from-white to-violet-400 w-full h-20 flex justify-between items-center relative">
+      <div className=" bg-gradient-to-r from-white to-violet-400 w-full h-20 flex justify-between items-center relative">
         <div className="">
           <Link to="/" className="flex ml-4">
             <h1 className="text-violet-500 font-bold text-5xl">Edumate</h1>

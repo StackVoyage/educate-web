@@ -4,6 +4,9 @@ import arrowLogo from "../assets/arrow_logo.png";
 import studentProfile from "../assets/student_profile.png";
 import modelStudent from "../assets/model-image.png";
 import About from "./About";
+import DemoLectures from "./DemoLectures";
+import Testimonials from "./Testimonials";
+import Footer from "./Footer";
 
 const CourseButton = ({ text }) => (
   <button className="mt-4 flex items-center w-fit rounded-3xl py-2 px-2 border border-gray-300 text-xl font-semibold hover:bg-violet-500 duration-300 active:bg-violet-700 focus:ring focus:ring-violet-300">
@@ -80,6 +83,9 @@ const Home = () => (
       </div>
     </div>
     <About />
+    <DemoLectures />
+    <Testimonials />
+    <Footer />
   </div>
 );
 
