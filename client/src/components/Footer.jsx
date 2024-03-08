@@ -92,7 +92,7 @@ const Footer = () => {
           transparent and engaging experience that sets the stage for your
           educational journey.
         </p>
-        <a href="tel:+911234567890">
+        <a href="/book-demo">
           <button className="w-40 bg-violet-700 rounded-lg text-white px-4 py-2 hover:bg-white hover:text-violet-600 hover:border hover:border-violet-700 duration-300">
             BOOK DEMO
           </button>

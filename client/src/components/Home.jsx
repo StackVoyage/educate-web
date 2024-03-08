@@ -87,7 +87,7 @@ const Home = () => (
     <About />
     <DemoLectures />
     <Testimonials />
-    <Advertising />
+    {/* <Advertising /> */}
     <Footer />
   </div>
 );

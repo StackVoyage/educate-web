@@ -7,6 +7,8 @@ import SignIn from "./components/auth/SignIn";
 
 import SignUp from "./components/auth/SignUp";
 import Enquiry from "./components/Enquiry";
+import ContactPage from "./components/Contact";
+import BookDemo from "./components/BookDemo";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-out" element={<SignUp />} />
           <Route path="/enquiry" element={<Enquiry />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/book-demo" element={<BookDemo />} />
         </Routes>
       </>
     </div>
