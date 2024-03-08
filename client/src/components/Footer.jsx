@@ -19,7 +19,7 @@ const NavigationLinks = () => (
     <LinkItem to="/enquiry" text="Enquiry" />
     <LinkItem to="/blogs" text="Blogs" />
     <LinkItem to="/login" text="Login" />
-    <LinkItem to="/faq" text="FAQ" />
+    <LinkItem to="/asking-questions" text="FAQ" />
   </>
 );
 
@@ -79,7 +79,7 @@ const Footer = () => {
 
         {/* 4th part */}
         <div className="flex flex-col w-full justify-center md:w-1/4 items-center">
-          <LinkItem to="/enquiry" text="Faculty" />
+          <LinkItem to="/faculty" text="Faculty" />
           <LinkItem to="/blogs" text="Courses" />
           <LinkItem to="/login" text="Results" />
         </div>

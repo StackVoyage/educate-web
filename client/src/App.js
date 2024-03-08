@@ -9,6 +9,8 @@ import SignUp from "./components/auth/SignUp";
 import Enquiry from "./components/Enquiry";
 import ContactPage from "./components/Contact";
 import BookDemo from "./components/BookDemo";
+import FAQ from "./components/FAQ";
+import Faculty from "./components/Faculty";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path="/enquiry" element={<Enquiry />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/book-demo" element={<BookDemo />} />
+          <Route path="/asking-questions" element={<FAQ />} />
+          <Route path="/faculty" element={<Faculty />} />
         </Routes>
       </>
     </div>
