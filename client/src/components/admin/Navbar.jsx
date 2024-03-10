@@ -3,7 +3,6 @@ import logo from "../../assets/edu-logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Marquee2 from "../Marquee";
-import UserNavbar from "../UserNavbar";
 
 export const NavLinkItemDesktop = ({ to, children, onClick }) => (
   <li className="text-white hover:scale-105 duration-300" onClick={onClick}>
@@ -60,7 +59,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`navbar bg-gradient-to-r from-white to-violet-400 w-full h-20 flex justify-between items-center relative ${
+        className={`navbar bg-gradient-to-r from-white to-violet-400  h-20 flex justify-between items-center relative ${
           isNavbarFixed ? "fixed-navbar" : ""
         }`}
       >
@@ -86,7 +85,7 @@ const Navbar = () => {
             {navOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
           </div>
           <ul
-            className={`md:hidden flex flex-col justify-center items-center absolute left-0 w-full top-20 mt-6 
+            className={`md:hidden flex flex-col justify-center items-center absolute left-0 w-full top-20
                         ${navOpen ? "navbar-open" : "navbar-collapse"}`}
           >
             <NavLinkItemMobile to="/">Home</NavLinkItemMobile>
