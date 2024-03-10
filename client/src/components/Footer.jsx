@@ -80,7 +80,7 @@ const Footer = () => {
         {/* 4th part */}
         <div className="flex flex-col w-full justify-center md:w-1/4 items-center">
           <LinkItem to="/faculty" text="Faculty" />
-          <LinkItem to="/blogs" text="Courses" />
+          <LinkItem to="/courses" text="Courses" />
           <LinkItem to="/login" text="Results" />
         </div>
       </footer>

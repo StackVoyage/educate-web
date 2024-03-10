@@ -11,6 +11,7 @@ import ContactPage from "./components/Contact";
 import BookDemo from "./components/BookDemo";
 import FAQ from "./components/FAQ";
 import Faculty from "./components/Faculty";
+import Courses from "./components/Courses";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/book-demo" element={<BookDemo />} />
           <Route path="/asking-questions" element={<FAQ />} />
           <Route path="/faculty" element={<Faculty />} />
+          <Route path="/courses" element={<Courses />} />
         </Routes>
       </>
     </div>
