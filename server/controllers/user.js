@@ -1,8 +1,6 @@
 import User from "../models/user.js";
 import jwt from "jsonwebtoken";
 
-let JWT_SECRET = "jfbdskjfbkdjsfbkjdsb3u78dsjk";
-
 export const createUser = async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -44,7 +42,7 @@ export const signInUser = async (req, res) => {
 
     const { _id, name, role } = loginUser;
 
-    const jwtToken = jwt.sign({ userId: _id }, JWT_SECRET);
+    const jwtToken = jwt.sign({ userId: _id }, process.env.JWT_SECRET);
 
     res.json({
       signInUser: {
