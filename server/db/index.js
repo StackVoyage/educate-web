@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
-const mongoURI =
-  "mongodb+srv://ashishgk1999:unPylsSSC18p2ueC@cluster0.kf46zfp.mongodb.net/";
+const mongoURI = process.env.MONGO_URL;
 
 mongoose
   .connect(mongoURI)
