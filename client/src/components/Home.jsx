@@ -7,7 +7,8 @@ import About from "./About";
 import DemoLectures from "./DemoLectures";
 import Testimonials from "./Testimonials";
 import Footer from "./Footer";
-import SignIn from "./auth/SignIn";
+
+import Advertising from "./Advertising";
 
 const CourseButton = ({ text }) => (
   <button className="mt-4 flex items-center w-fit rounded-3xl py-2 px-2 border border-gray-300 text-xl font-semibold hover:bg-violet-500 duration-300 active:bg-violet-700 focus:ring focus:ring-violet-300">
@@ -86,6 +87,7 @@ const Home = () => (
     <About />
     <DemoLectures />
     <Testimonials />
+    {/* <Advertising /> */}
     <Footer />
   </div>
 );

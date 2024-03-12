@@ -19,7 +19,7 @@ const NavigationLinks = () => (
     <LinkItem to="/enquiry" text="Enquiry" />
     <LinkItem to="/blogs" text="Blogs" />
     <LinkItem to="/login" text="Login" />
-    <LinkItem to="/faq" text="FAQ" />
+    <LinkItem to="/asking-questions" text="FAQ" />
   </>
 );
 
@@ -79,8 +79,8 @@ const Footer = () => {
 
         {/* 4th part */}
         <div className="flex flex-col w-full justify-center md:w-1/4 items-center">
-          <LinkItem to="/enquiry" text="Faculty" />
-          <LinkItem to="/blogs" text="Courses" />
+          <LinkItem to="/faculty" text="Faculty" />
+          <LinkItem to="/courses" text="Courses" />
           <LinkItem to="/login" text="Results" />
         </div>
       </footer>
@@ -92,7 +92,7 @@ const Footer = () => {
           transparent and engaging experience that sets the stage for your
           educational journey.
         </p>
-        <a href="tel:+911234567890">
+        <a href="/book-demo">
           <button className="w-40 bg-violet-700 rounded-lg text-white px-4 py-2 hover:bg-white hover:text-violet-600 hover:border hover:border-violet-700 duration-300">
             BOOK DEMO
           </button>
